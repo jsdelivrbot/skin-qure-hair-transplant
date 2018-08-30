@@ -1,0 +1,229 @@
+/* html{overflow: hidden;} */
+.logo{
+	
+	@include respond-to($tablet-landscape) {
+		margin-right: 0 !important;
+	}
+	@include respond-to($large-phone) {
+		@include padding(0);
+	}
+	@include respond-to($small) {
+		top: -3px;
+		left: -25px;
+	}
+}
+.skinQure__header{
+	.header__bg{
+		background-color:transparent;
+		// @include box-shadow(1px 1px 3px #747474);
+		width: 100%;
+		overflow: hidden;
+		@include transition(all 0.3s ease);
+		@include padding(5px 0);
+		@include box-shadow(none);
+		.navbar-brand{
+			@extend .logo;
+			@include respond-to($large-phone) {
+				width: 60% !important;
+			}
+			@include respond-to($phone) {
+				width: 60% !important;
+			}
+			@include respond-to($small) {
+				width: 80% !important;
+			}
+		}
+		.navbar-collapse{
+			@include respond-to($phone) {
+				width: 30% !important;
+			}
+		}
+		.navbar-nav{
+			.nav-item{
+				.nav-link{
+					color:#fff;
+				}
+			}
+		}
+		.menu__mid{
+			@include respond-to($desktop) {
+				padding:0px;
+			}
+			.nav-item{
+				margin:0 7px;
+				.nav-link{
+					position: relative;
+					text-transform: capitalize;	
+					display: none;
+					@include transition(all 0.3s ease);
+					&:hover{
+						color: #404040;
+					}				
+					@include respond-to($desktop) {
+						font-size:13px;
+					}
+					img{
+						width: 28px;
+						position: relative;
+						top: -7px;
+					}
+				}
+			}
+			.active{
+				.nav-link{
+					
+				}
+			}
+		}
+	}
+	.white__header__bg{
+		background-color:#fff;
+		-webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+		box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+		width: 100%;
+		overflow: hidden;
+		@include padding(5px 0);
+		.navbar-brand{
+			@extend .logo;
+			color: #6495ed;
+			@include respond-to($tablet-landscape) {
+				margin-right: 0 !important;
+			}
+			@include respond-to($large-phone) {
+				@include padding(0 0 0 1rem);
+			}
+		}
+		.navbar-nav{
+			.nav-item{
+				&:last-child{
+					.nav-link{
+						&:after{
+							content: none;							
+						}
+					}
+				}
+				.nav-link{
+					color: #adadad;
+					display: block;
+					&:after{
+						content: '';
+						position: absolute;
+						height: 17px;
+						width: 1px;
+						background-color: #adadad;
+						right: -7px;
+						top: 10px;
+					}
+				}
+			}
+		}
+		.menu__mid{
+			@include respond-to($desktop) {
+				padding:0px;
+			}
+			.nav-item{
+				margin:0 7px;
+				.nav-link{
+					position: relative;
+					@include respond-to($desktop) {
+						font-size:13px;
+					}					
+					&:hover{
+						
+					}
+				}
+			}
+			.active{
+				.nav-link{
+					
+				}
+			}
+		}
+	}
+
+}
+.btn{
+	border-radius: 4px;
+}
+.book_appointment{
+	border-radius: 4px;
+	color: #fff !important;
+}
+.ma5menu__toggle{
+	width:auto;
+	background:transparent;
+	color: $second;
+	i{
+		font-size: 18px;
+	}
+	&:hover{
+		background-color: transparent;
+		color:$primary;
+	}
+	&:focus{
+		@include box-shadow(none);
+	}
+}
+.ma5menu__alert{
+	background-image: linear-gradient(to bottom, rgba(14,101,182,0) 0%, $primary 50%)
+}
+.ma5menu__head{
+	border-bottom:0;
+}
+.ma5menu__container{
+	background-color: #082d1c;
+	background-image: url("../images/menu-background.png");
+}
+.ma5menu__panel{	
+	background-color: #00311a;
+	background-image: url("../images/menu-background.png");	
+	ul{
+		li{
+			a{
+				font-size:13px;
+				min-height:auto;
+				color:#adadad;
+				@include padding(10px 20px);
+				i{
+					@include margin(0 10px 0 0);
+				}
+				&:hover{
+					color: $second;
+				}
+				&:focus{
+					color: $second;
+				}
+			}
+		}
+	}
+}
+.ma5menu__toggle{
+	background-color: transparent;
+	right: 15px;	
+}
+.ma5menu__container{
+	background: #fff;
+	.ma5menu__panel{
+		background: #fff;
+	}
+}
+.ma5menu--right .ma5menu__header .ma5menu__toggle{
+	background: #5a5a5a;margin: 10px;width: 40px;height: 40px;
+	&:hover{
+		color: #fff;
+	}
+}
+.ma5menu__toggle:hover .ma5menu__close{
+	color: #fff;
+}
+.ma5menu__panel>ul li:first-of-type{
+	border-top: 1px solid #eaeaea;
+}
+.ma5menu__panel>ul li a{
+	border-bottom: 1px solid #eaeaea;
+}
+// .ma5menu__panel>ul li .ma5menu__category.ma5menu__path{color: $primary !important}
+// 
+// .ma5menu__panel>ul li a{    font-size: 13px;    min-height: auto;    padding: 10px 20px;}
+// .ma5menu__panel ul li a i, .ma5menu__panel>ul li .ma5menu__category.ma5menu__path > i{margin: 0 10px 0 0;}
+// .ma5menu__alert{background-image: linear-gradient(to bottom, rgba(14,101,182,0) 0%, $primary 50%);}
