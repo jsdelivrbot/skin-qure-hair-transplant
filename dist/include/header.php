@@ -9,7 +9,7 @@
 			<div class="navbar-collapse w-75 pr-5">
 				<ul class="navbar-nav menu__mid justify-content-center ml-auto d-none d-sm-none d-lg-inline-flex">
 					<li class="nav-item">
-						<a class="nav-link btn btn-raised btn-secondary btn-danger book_appointment" href="about-us.php">Book An Appointment</a>
+						<a class="nav-link btn btn-raised btn-secondary btn-danger book_appointment" href="#bookAppointment">Book An Appointment</a>
 					</li>
 					<!-- <li class="nav-item">
 						<a class="nav-link" href="faq.php"><img src="images/icons/qna.png" alt=""> FAQ</a>
