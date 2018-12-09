@@ -6,6 +6,6 @@
 	<script src="js/menu.min.js"></script>
 
 	<script src="js/main.js"></script>
-	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/michalsnik/aos@2.1.1/dist/aos.js"></script>
 
 	<script src="js/scripts.js"></script>
